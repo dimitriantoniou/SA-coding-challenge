@@ -131,6 +131,14 @@ stringToArray("Trick or Treat");
 // Output: -15
 // Input: multiply(-2, -7) |
 // Output: 14
+function multiply(a,b){
+    let product = 0;
+    for (let i=1;i<=b;i++){
+        product += a;
+    }
+    console.log("#10: "+ product);
+}
+multiply(5,6);
 
 // 11 Write a function that takes a string and returns true if all of the characters are the same case, false otherwise.
 //
