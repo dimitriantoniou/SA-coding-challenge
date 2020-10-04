@@ -68,6 +68,8 @@ arrayOfIntegers(null); //should return []
 // Input: "challenge", "/" |
 // Output: "1/1/1/2/2/2/1/1/2"
 
+
+
 // 5
 // Given a string of names like this: "Travis:Meyer;Gene:Carangal;Tom:Young;Jeff:Meyer",
 // write a function that makes the entire string uppercase
@@ -94,6 +96,13 @@ arrayOfIntegers(null); //should return []
 // Example:
 // Input: "Trick or Treat"
 // Output: [‘Trick’, ‘or’, ‘Treat’]
+function stringToArray(str){
+let array = [];
+array.push(str.split(" "));
+console.log("#7: " + array);
+}
+stringToArray("Trick or Treat");
+
 
 // 8
 // Write a function to count the number of occurrences of a substring in a given string.
