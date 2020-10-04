@@ -150,6 +150,19 @@ multiply(5,6);
 // Input: "HeLLo wORld" |
 // Output: false
 
+function sameCase(str) {
+    if (str === str.toLowerCase() || str === str.toUpperCase()) {
+        console.log("#11: " + true);
+    }else{
+        console.log("#11: " + false);
+    }
+}
+console.log(sameCase("hello world"));
+console.log(sameCase("HELLO WORLD"));
+console.log(sameCase("Hello World"));
+//why is this returning undefined??
+
+
 // 12
 // Write a function that takes an array of integers
 // and returns an array of integers where each number is the sum of itself and all of the previous numbers in the array.
