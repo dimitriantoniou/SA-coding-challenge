@@ -10,6 +10,22 @@ function sequenceSum(start,finish,step){
     for (let i=start;i<=finish;i+=step){
         sum += i;
     }
-    console.log(sum);
+    console.log("#1: " + sum);
 }
-sequenceSum(1,4,1);
+sequenceSum(1,4,1); //should return 10
+
+//2
+//Given a string of any length with any characters in it,
+// write a function to determine whether or not the string contains the whole word "english".
+// The order of characters/spelling is important;
+// a string "agkjnenglishsad" would return true while "asdneglihsth" would return false.
+// Upper and lower case does not matter.
+// Return values should be booleans (true/false).
+
+function containsEnglish(str){
+    str.toLowerCase();
+    console.log("#2: " + str.includes("english"));
+}
+containsEnglish("agkjnenglishsad"); //should return true
+containsEnglish("asdneglihsth"); //should return false
+
