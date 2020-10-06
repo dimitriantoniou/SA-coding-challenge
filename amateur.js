@@ -87,17 +87,17 @@ function sortNames(str){
     let upperCase = str.toUpperCase();//makes entire string uppercase
     let splitString = upperCase.split(";"); //turns list into an array of individual strings 'first:last'
     let names = [];
-    for (let i=0;i<splitString.length;i++){
+    for (let i=0;i<splitString.length;i++){ //split apart at the colon
         names.push(splitString[i].split(":"));
     }
-    for(let i=0;i<names.length;i++){
+    for(let i=0;i<names.length;i++){//put the last name first
         let reverseNames = names[i].reverse();
     }
     let joinedNames = [];
-    for (let i=0;i<names.length;i++){
+    for (let i=0;i<names.length;i++){//join the last name and first name
         joinedNames.push(names[i].join(', '));
     }
-    let sorted = joinedNames.sort();
+    let sorted = joinedNames.sort();//sort the list of names alphabetically by last name
 
     //console.log(upperCase);
     //console.log(splitString);
