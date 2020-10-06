@@ -98,13 +98,15 @@ function sortNames(str){
         joinedNames.push(names[i].join(', '));
     }
     let sorted = joinedNames.sort();//sort the list of names alphabetically by last name
+    let sortedString=sorted.toString();
 
     //console.log(upperCase);
     //console.log(splitString);
     //console.log(names);
     //console.log(names[0])
-    console.log(sorted);
     //console.log(reverseNames);
+    //console.log(sorted);
+    console.log(sortedString);
 }
 sortNames("Travis:Meyer;Gene:Carangal;Tom:Young;Jeff:Meyer")
 
