@@ -85,9 +85,16 @@ arrayOfIntegers(null); //should return []
 
 function sortNames(str){
     let upperCase = str.toUpperCase();//makes entire string uppercase
-    let splitString = upperCase.split(";");
+    let splitString = upperCase.split(";"); //turns list into an array of individual strings 'first:last'
+    let names = [];
+    for (let i=0;i<splitString.length;i++){
+        names.push(splitString[i].split(":"));
+    }
+    console.log(splitString);
+    console.log(names);
 }
-sortNames("Dimitri:Antoniou;Sarah:Mellor")
+sortNames("Travis:Meyer;Gene:Carangal;Tom:Young;Jeff:Meyer")
+
 /*
 // 6
 // Write a function to calculate a person’s age based on the date entered in the format MM/DD/YYYY.
