@@ -83,6 +83,12 @@ arrayOfIntegers(null); //should return []
 // Example:
 // The end string should look like this: "(CARANGAL, GENE)(MEYER, JEFF)(MEYER, TRAVIS)(YOUNG, TOM)"
 
+function sortNames(str){
+    let upperCase = str.toUpperCase();//makes entire string uppercase
+    let splitString = upperCase.split(";");
+}
+sortNames("Dimitri:Antoniou;Sarah:Mellor")
+/*
 // 6
 // Write a function to calculate a person’s age based on the date entered in the format MM/DD/YYYY.
 //
@@ -184,6 +190,7 @@ console.log(sameCase("Hello World"));
 // Input: "color" |
 // Output: false
 
+
 // 14
 // Write a function that takes a phone number with letters in it and converts it to one with only numbers.
 // All input phone numbers will follow this pattern: "###-###-####"
@@ -205,3 +212,5 @@ console.log(sameCase("Hello World"));
 // Output: [[[1], [5, 3, 2]], [[1, 5], [3, 2]], [[1, 5, 3], [2]]]
 // Input: [a, b, c] |
 // Output: [[[a], [b, c]], [[a, b], [c]]]
+
+ */
