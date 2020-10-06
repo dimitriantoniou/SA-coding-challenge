@@ -93,10 +93,17 @@ function sortNames(str){
     for(let i=0;i<names.length;i++){
         let reverseNames = names[i].reverse();
     }
+    let joinedNames = [];
+    for (let i=0;i<names.length;i++){
+        joinedNames.push(names[i].join(', '));
+    }
 
-    console.log(upperCase);
-    console.log(splitString);
-    console.log(names);
+    //console.log(upperCase);
+    //console.log(splitString);
+    //console.log(names);
+    //console.log(names[0])
+    console.log(joinedNames);
+    //console.log(reverseNames);
 }
 sortNames("Travis:Meyer;Gene:Carangal;Tom:Young;Jeff:Meyer")
 
