@@ -90,6 +90,11 @@ function sortNames(str){
     for (let i=0;i<splitString.length;i++){
         names.push(splitString[i].split(":"));
     }
+    for(let i=0;i<names.length;i++){
+        let reverseNames = names[i].reverse();
+    }
+
+    console.log(upperCase);
     console.log(splitString);
     console.log(names);
 }
