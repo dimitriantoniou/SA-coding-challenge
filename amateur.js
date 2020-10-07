@@ -129,7 +129,8 @@ function sortNames(str){
 }
 sortNames("Travis:Meyer;Gene:Carangal;Tom:Young;Jeff:Meyer")
 
-/*
+
+
 // 6
 // Write a function to calculate a person’s age based on the date entered in the format MM/DD/YYYY.
 //
@@ -137,6 +138,26 @@ sortNames("Travis:Meyer;Gene:Carangal;Tom:Young;Jeff:Meyer")
 // Input: 11/04/1982
 // Output: 34
 
+function calculateAge(dob) {
+    let dobString=dob.toString();
+    let dobSplit=dobString.split("/");//split date formatting
+    let month = dobSplit[0];//get the month
+    let day =dobSplit[1];// get the day
+    let year = dobSplit[2];//get the year
+    let newDob=new Date(year, month, day);
+    let today = new Date();//get today's date
+
+    let age = today-newDob;
+console.log(dobSplit);
+console.log(month);
+console.log(day);
+console.log(year);
+console.log(newDob);
+console.log(age);
+}
+calculateAge("11/04/1982");
+
+/*
 // 7
 // Write a function to convert a string into an array of words.
 //
@@ -253,5 +274,4 @@ console.log(sameCase("Hello World"));
 // Output: [[[1], [5, 3, 2]], [[1, 5], [3, 2]], [[1, 5, 3], [2]]]
 // Input: [a, b, c] |
 // Output: [[[a], [b, c]], [[a, b], [c]]]
-
- */
+*/
