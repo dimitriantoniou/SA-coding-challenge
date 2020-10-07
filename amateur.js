@@ -84,6 +84,25 @@ arrayOfIntegers(null); //should return []
 // The end string should look like this: "(CARANGAL, GENE)(MEYER, JEFF)(MEYER, TRAVIS)(YOUNG, TOM)"
 
 function sortNames(str){
+    const names = str.toUpperCase().split(";");//convert to uppercase and split at the semicolons into individuals
+    for (let i=0;i<names.length;i++){//split individuals into first and last
+        names[i]=names[i].split(":");
+    }
+    for (let i=0;i<names.length;i++){//alphabetize by last name
+        names[i].reverse();
+    }
+    for (let i=0;i<names.length;i++){//join first and last name with a comma
+        names[i]=names[i].join(', ');
+    }
+    names.sort();//sort by last name
+    const result = names.map(name => '(' + name + ')')//add parentheses
+
+    const final = result.toString();//convert to a string
+    console.log(final);
+
+
+
+    /*
     let upperCase = str.toUpperCase();//makes entire string uppercase
     let splitString = upperCase.split(";"); //turns list into an array of individual strings 'first:last'
     let names = [];
@@ -97,8 +116,9 @@ function sortNames(str){
     for (let i=0;i<names.length;i++){//join the last name and first name
         joinedNames.push(names[i].join(', '));
     }
-    let sorted = joinedNames.sort();//sort the list of names alphabetically by last name
-    let sortedString=sorted.toString();
+    const result = names.map(name => '(' + name + ')');
+    //let sorted = joinedNames.sort();//sort the list of names alphabetically by last name
+    //let sortedString=sorted.toString();
 
     //console.log(upperCase);
     //console.log(splitString);
@@ -106,7 +126,8 @@ function sortNames(str){
     //console.log(names[0])
     //console.log(reverseNames);
     //console.log(sorted);
-    console.log(sortedString);
+    //console.log(sortedString);
+    */
 }
 sortNames("Travis:Meyer;Gene:Carangal;Tom:Young;Jeff:Meyer")
 
