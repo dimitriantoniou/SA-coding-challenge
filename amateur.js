@@ -96,10 +96,8 @@ function sortNames(str){
     }
     names.sort();//sort by last name
     const result = names.map(name => '(' + name + ')')//add parentheses
-
-    const final = result.toString();//convert to a string
+    const final = result.join('');   //remove commas between names
     console.log(final);
-
 
 
     /*
