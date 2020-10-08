@@ -231,7 +231,9 @@ function multiply(a,b){
 }
 multiply(5,6);
 
-// 11 Write a function that takes a string and returns true if all of the characters are the same case, false otherwise.
+// 11
+// Write a function that takes a string
+// and returns true if all of the characters are the same case, false otherwise.
 //
 // Examples:
 // Input: "hello world" |
@@ -248,10 +250,9 @@ function sameCase(str) {
         console.log("#11: " + false);
     }
 }
-console.log(sameCase("hello world"));
-console.log(sameCase("HELLO WORLD"));
-console.log(sameCase("Hello World"));
-//why is this returning undefined??
+sameCase("hello world");
+sameCase("Hello World");
+//originally had console.log(sameCase(str)); which was returning undefined
 
 
 // 12
