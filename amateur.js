@@ -130,7 +130,7 @@ function sortNames(str){
 sortNames("Travis:Meyer;Gene:Carangal;Tom:Young;Jeff:Meyer")
 
 
-
+/*
 // 6
 // Write a function to calculate a person’s age based on the date entered in the format MM/DD/YYYY.
 //
@@ -156,8 +156,8 @@ console.log(newDob);
 console.log(age);
 }
 calculateAge("11/04/1982");
+*/
 
-/*
 // 7
 // Write a function to convert a string into an array of words.
 //
@@ -179,6 +179,16 @@ stringToArray("Trick or Treat");
 // Input: "The pumpkin rolled down the hill and under someone’s car.", "the"
 // Output: 2
 
+function countSubstring(str,substr){
+    let count = 0;
+    if (str.includes(substr)){
+        count++
+    }
+    console.log("#8: "+count);
+
+}
+countSubstring("The pumpkin rolled down the hill and under someone's car.","the");
+countSubstring("The quick brown fox jumps over the lazy dog.","the");
 // 9 Write a function to remove these special characters from a string:
 // ~,!,$,&,%, ,#,@,-,_,^,? (yes, "space" is a character in that list)
 //
@@ -274,4 +284,3 @@ console.log(sameCase("Hello World"));
 // Output: [[[1], [5, 3, 2]], [[1, 5], [3, 2]], [[1, 5, 3], [2]]]
 // Input: [a, b, c] |
 // Output: [[[a], [b, c]], [[a, b], [c]]]
-*/
