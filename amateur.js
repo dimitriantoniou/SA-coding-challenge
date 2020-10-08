@@ -257,13 +257,26 @@ sameCase("Hello World");
 
 // 12
 // Write a function that takes an array of integers
-// and returns an array of integers where each number is the sum of itself and all of the previous numbers in the array.
+// and returns an array of integers where
+// each number is the sum of itself and all of the previous numbers in the array.
 //
 // Example:
 // Input: [1, 1, 1] |
 // Output: [1, 2, 3]
 // Input: [4, 2, 1, 3, 5] |
 // Output: [4, 6, 7, 10, 15]
+
+function sumOfSelves(arr){
+//for each array element, sum itself plus the preceeding elements
+//add that new sum to a new array
+
+    let sum=0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i]
+    }
+    console.log("#12: "+sum);
+}
+sumOfSelves([1,1,1]);
 
 // 13 An Isogram is a word that has no repeating letters, consecutive or not.
 // Write a function that takes a string and returns true if it’s an isogram and false if it isn’t.
