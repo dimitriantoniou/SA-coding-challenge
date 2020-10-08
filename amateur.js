@@ -269,12 +269,12 @@ sameCase("Hello World");
 function sumOfSelves(arr){
 //for each array element, sum itself plus the preceeding elements
 //add that new sum to a new array
-
-    let sum=0;
-    for (let i = 0; i < arr.length; i++) {
-        sum += arr[i]
+    let result=arr;
+    for (let i=arr.length-1;i<arr.length;i--){
+        result[i]=(arr[i)
     }
-    console.log("#12: "+sum);
+
+    console.log("#12: "+result);
 }
 sumOfSelves([1,1,1]);
 
