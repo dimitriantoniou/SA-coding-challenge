@@ -181,14 +181,19 @@ stringToArray("Trick or Treat");
 
 function countSubstring(str,substr){
     let count = 0;
+    /*
     if (str.includes(substr)){
         count++
     }
-    console.log("#8: "+count);
+    */
+    let regex = new RegExp(substr, 'gi' );
+    let found = str.match(regex) || [];
+    count = found.length;
 
+    console.log("#8: " +count);
 }
 countSubstring("The pumpkin rolled down the hill and under someone's car.","the");
-countSubstring("The quick brown fox jumps over the lazy dog.","the");
+countSubstring("The","the");
 // 9 Write a function to remove these special characters from a string:
 // ~,!,$,&,%, ,#,@,-,_,^,? (yes, "space" is a character in that list)
 //
