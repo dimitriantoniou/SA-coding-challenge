@@ -206,10 +206,10 @@ countSubstring("The pumpkin rolled down the hill and under someone's car.","the"
 
 function removeChars(str){
 
-    let result = str.replace(/[~!$&%#@_^?]/g, '');
+    let result = str.replace(/[~!$&%#@_^?' '-]/g, '');
     console.log ("#9: " + result);
 }
-removeChars("Happy ~!$%&#@_?Halloween");
+removeChars("Happy ~!$%&#@_?-Halloween");
 
 // 10
 // Write a function called "multiply" that takes two integers and returns the product.
