@@ -193,7 +193,8 @@ function countSubstring(str,substr){
     console.log("#8: " +count);
 }
 countSubstring("The pumpkin rolled down the hill and under someone's car.","the");
-countSubstring("The","the");
+//countSubstring("The","the");
+
 // 9 Write a function to remove these special characters from a string:
 // ~,!,$,&,%, ,#,@,-,_,^,? (yes, "space" is a character in that list)
 //
@@ -202,6 +203,13 @@ countSubstring("The","the");
 // Output: "HappyHalloween"
 // Input: "I’ll bet living in a nudist-colony takes all the fun out of Halloween!!" |
 // Output: "IllbetlivinginanudistcolonytakesallthefunoutofHalloween"
+
+function removeChars(str){
+
+    let result = str.replace(/[~!$&%#@_^?]/g, '');
+    console.log ("#9: " + result);
+}
+removeChars("Happy ~!$%&#@_?Halloween");
 
 // 10
 // Write a function called "multiply" that takes two integers and returns the product.
